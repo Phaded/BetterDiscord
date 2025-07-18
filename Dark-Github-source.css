@@ -13,7 +13,7 @@
     --elevation-low: 0 1px 0 rgba(40, 40, 50, 0.2), 0 1.5px 0 rgba(60, 60, 70, 0.05), 0 2px 0 rgba(40, 40, 50, 0.05);
     --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
     --channels-default: rgb(139, 148, 158);
-    --channeltextarea-background: rgb(7, 10, 16);
+    --channeltextarea-background: rgb(13, 17, 23);
     --voice-color: var(--brand-experiment);
     --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     --activity-card-background: #0f0f0f;
@@ -116,6 +116,12 @@
 }  
 .searchBar__5ec2f, .background__1fed1, .badgeList__1fed1, .container_fea832, .iconContainer__0624f, .circle__8cc9a, .stepNumber_d9914b, .box_d9914b, .container_a45028, .cardPrimary_a298b, .perkCard_b62c4e,.guildContainer__5dba5, .wrapper__5b98e, .container_c50183, .paymentPane__01014, .outer_c0bea0, .overlay__24502, .messageContainer__95796, .searchBar__97492, .tutorial__2692d, .messages__1ccd1, .button__06eda, .friendRequestsButton__523aa, .searchBox_d9c882, .inner_a99829, .searchBar_c0e32c.container_a45028, .contentWrapper__08434, .container_cb32c7, #undiscord .multiInput, #undiscord.container, .searchResult__02a39, .emojiErrorItem__67954, .tiers_f15dca > .tier_f15dca:not(:first-child), .descriptionBox__981f7, .theme-dark .card_dc2e44, .cardPrimary__73069.editable__73069, .card_ea91d1, .avatarCard_da92c3, .viewServerButton_adff39, .button__71c22, .otherRoles__71c22, .copyInput_fffc15, .emptyChannelIcon__00de6, .button_f563df, .wrapper_f7ecac, .button_e131a9 .buttonColor_e131a9, .button_e131a9.buttonColor_e131a9, .bd-search-wrapper, .bd-modal-root, .bd-addon-error, .modeSelected__2ea32 .link__2ea32, .modeSelected__2ea32:hover .link__2ea32, .prompt__5d7c9, .perks__30359, .perksList__3bf54, .upsellFooter__5e07c, .input_ac6cb0, .interactiveSelected__972a0, .prompt_fe70ca, .optionButtonWrapper__270d7, .mainCard_f369db, .addReactButton__34c2c, .buttonInner__34c2c, .reaction_f8896c, .wrapper__44df5, .reactionBtn__23977.forceShow__23977 {
   border: var(--border);
+}
+.background__1fed1 {
+    background-color: var(--background-secondary);
+}
+.fieldList__1fed1 {
+    background-color: var(--background-secondary);
 }
 
 .sidebarRegion__23e6b, .categoryList_c0e32c, .categoryList__3ad28, #undiscord .sidebar, .container__551b0, .wrapper_b1e4f3, .contentWrapper__9b0f4 {
@@ -255,7 +261,70 @@
     font-size: 0.9rem;
 }
 
- /* Updated Edits */
+/* Updated Edits */
+.messageGroupWrapper__45690 {
+    background-color: var(--background-primary);
+} /* Pinned Messages items background */
+.messagesPopout__45690 {
+    background-color: var(--background-floating);
+} /* Pinned Messages background */
+.inner_c0bea0 {
+    background-color: var(--background-floating);
+} /* Profile View Right Side Panel background */
+:root .user-profile-popout {
+    background-color: var(--background-floating);
+} /* Mini Profile View background */
+:root .user-profile-modal {
+    background-color: var(--background-primary);
+} /* Profile View background */
+.messageContainer__4ad69 {
+    background: var(--background-primary);
+} /* Bookmarks items background */
+.messagesScroller__4ad69 {
+    background-color: var(--background-floating);
+} /* Bookmarks background */
+.channelRow_e4503a {
+    background-color: var(--background-floating);
+} /* Server 'Browse Channels' tab channel items background */
+.pageBody__41ed7 {
+    background-color: var(--background-primary);
+} /* Server 'Browse Channels' tab background */
+.container__98cbd {
+    background-color: var(--background-floating);
+} /* Server 'Server Boosts' tab levels and Perks background */
+.sidebarContainer__89463 {
+    background-color: var(--background-floating);
+} /* Server 'Server Boosts' tab right-side background */
+.contentContainer__89463 {
+    background-color: var(--background-primary);
+} /* Server 'Server Boosts' tab background */
+.mainTableContainer__09a38 {
+    background: var(--background-floating);
+} /* Server 'Members' tab 'Recent Members' background */
+.page_c791b2 {
+    background-color: var(--background-primary);
+} /* Server 'Members' tab background */
+.card__73069:not(.outline__73069) {
+    background-color: var(--background-floating);
+} /* Server Channel 'Sync permissions' bar */
+.cardFolder__1a4ef {
+   background: var(--background-floating)
+} /* Server Channel 'Who can access' menu */
+.scroller__53543 {
+   background-color: var(--background-primary);
+} /* Server Channel Advanced Permissions Side Bar */
+.contentRegion__23e6b {
+   background-color: var(--background-primary);
+} /* Settings Header Bar */
+.outer_bf1984 {
+    background-color: var(--background-floating);
+} /* Friends List - Active Now List */
+.tabBody__133bf {
+   background-color: var(--background-primary);
+} /* Friends List */
+.chatContent_f75fb0 {
+   background-color: var(--background-primary);
+} /* Chat Background */
 .visual-refresh .bg__960e4 {
     background: var(--background-tertiary);
 } /* App Header */
@@ -274,6 +343,7 @@
 } /* Embeds Panel */
 .visual-refresh .panels_c48ade {
     background: var(--background-secondary-alt);
+    box-shadow: 0px 0px 11px #000000a3;
 } /* User Panel */
 .visual-refresh .sidebar_c48ade:after {
     background: unset;
@@ -306,6 +376,21 @@
 .visual-refresh .container__2637a {
     border: none;
 } /* Side Panel Border Top */
+.visual-refresh .privateChannels__35e86 {
+    background: var(--background-secondary);
+} /* User DM Panel Bottom */
+.visual-refresh .markup__75297 code {
+    background: var(--background-tertiary);
+} /* Embeds Panel */
+.visual-refresh .textContainer__4d95d {
+    background-color: var(--background-secondary);
+} /* Attachment Files */
+.newMosaicStyle__4d95d .codeView__4d95d {
+    background-color: var(--background-secondary);
+} /* Attachment Files Background */
+.newMosaicStyle__4d95d .footer__4d95d {
+    background-color: var(--background-floating);
+} /* Attachment Files Header Background */
 
 
 /* BD Styles */
